@@ -1,0 +1,27 @@
+
+> Disaster Preparedness Platform Design@0.1.0 dev
+> vite
+
+
+  VITE v6.3.5  ready in 202 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: use --host to expose
+10:55:28 PM [vite] (client) hmr update /src/components/LanguageContext.tsx
+10:55:29 PM [vite] (client) hmr invalidate /src/components/LanguageContext.tsx Could not Fast Refresh ("useLanguage" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react-swc#consistent-components-exports
+10:55:29 PM [vite] (client) hmr update /src/components/ModulesPage.tsx, /src/components/Dashboard.tsx, /src/components/VRTrainingPage.tsx, /src/components/LoginPage.tsx, /src/components/EmergencySOS.tsx, /src/App.tsx, /src/components/LandingPage.tsx, /src/components/Navigation.tsx, /src/components/RecentIncidents.tsx
+10:56:15 PM [vite] (client) hmr update /src/components/LanguageContext.tsx
+10:56:15 PM [vite] (client) hmr invalidate /src/components/LanguageContext.tsx Could not Fast Refresh ("useLanguage" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react-swc#consistent-components-exports
+10:56:15 PM [vite] (client) hmr update /src/components/ModulesPage.tsx, /src/components/Dashboard.tsx, /src/components/VRTrainingPage.tsx, /src/components/LoginPage.tsx, /src/components/EmergencySOS.tsx, /src/App.tsx, /src/components/LandingPage.tsx, /src/components/Navigation.tsx, /src/components/RecentIncidents.tsx
+10:57:02 PM [vite] (client) hmr update /src/components/LanguageContext.tsx
+10:57:17 PM [vite] (client) hmr update /src/components/LanguageContext.tsx
+10:57:29 PM [vite] (client) hmr update /src/components/LanguageContext.tsx
+11:00:10 PM [vite] (client) hmr update /src/components/LandingPage.tsx
+11:00:12 PM [vite] (client) hmr update /src/components/VRTrainingPage.tsx
+11:00:14 PM [vite] (client) hmr update /src/components/ModulesPage.tsx
+11:00:16 PM [vite] (client) hmr update /src/components/RecentIncidents.tsx
+11:00:18 PM [vite] vite.config.ts changed, restarting server...
+11:00:18 PM [vite] (client) Re-optimizing dependencies because vite config has changed
+11:00:18 PM [vite] server restarted.
+11:02:29 PM [vite] vite.config.ts changed, restarting server...
+11:02:29 PM [vite] server restarted.
