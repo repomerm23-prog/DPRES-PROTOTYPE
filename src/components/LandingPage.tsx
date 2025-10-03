@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { Button } from './ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
 import { ImageWithFallback } from './designkit/ImageWithFallback';
-import image_eb676453f7fa58e46cc7a87afbf8720a41cd2d30 from '../assets/eb676453f7fa58e46cc7a87afbf8720a41cd2d30.png';
 import { 
   Shield, 
   LayoutDashboard, 
