@@ -6,7 +6,7 @@ import { ImageWithFallback } from './figma/ImageWithFallback';
 import { BookOpen, Users, Shield, AlertTriangle } from 'lucide-react';
 import { useLanguage } from './hooks/useLanguage';
 
-export function RecentIncidents() {
+export function LandingPage() {
   const { t } = useLanguage();
 
   return (
