@@ -144,7 +144,7 @@ export function LandingPage({ userData }: LandingPageProps) {
                 <Link to="/dashboard" className="w-full sm:w-auto">
                   <Button size="lg" className="w-full sm:w-auto bg-indigo-500 hover:bg-indigo-600 text-white shadow-lg hover:shadow-xl transition-all">
                     <LayoutDashboard className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
-                    <span className="text-sm sm:text-base">{t('nav.dashboard')}</span>
+                    <span className="text-sm sm:text-base">Dashboard</span>
                   </Button>
                 </Link>
                 <Link to="/modules" className="w-full sm:w-auto">

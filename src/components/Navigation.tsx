@@ -139,7 +139,7 @@ export function Navigation({ userData, onLogout, isFirstLogin = false }: Navigat
                 }`}
               >
                 <LayoutDashboard className="h-4 w-4" />
-                <span className="font-medium text-sm">{t('nav.dashboard')}</span>
+                <span className="font-medium text-sm">Dashboard</span>
               </Link>
               
               <Link 
@@ -268,7 +268,7 @@ export function Navigation({ userData, onLogout, isFirstLogin = false }: Navigat
                         }`}
                       >
                         <LayoutDashboard className="h-5 w-5" />
-                        <span className="font-medium">{t('nav.dashboard')}</span>
+                        <span className="font-medium">Dashboard</span>
                       </Link>
                       
                       <Link 
