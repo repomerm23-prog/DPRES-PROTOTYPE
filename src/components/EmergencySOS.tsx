@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Button } from './ui/button';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from './ui/dialog';
 import { AlertTriangle, Clock, X } from 'lucide-react';
-import { useLanguage } from './LanguageContext';
+import { useLanguage } from './hooks/useLanguage';
 
 interface EmergencySOSProps {
   children: React.ReactNode;

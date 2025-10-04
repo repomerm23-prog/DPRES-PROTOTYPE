@@ -1,22 +1,7 @@
-import React, { createContext, useContext, useState, ReactNode } from 'react';
+import React, { useState, ReactNode } from 'react';
+import { LanguageContext } from './hooks/useLanguage';
 
 export type Language = 'en' | 'hi' | 'bn' | 'ta' | 'te' | 'mr' | 'gu' | 'kn' | 'ml' | 'or' | 'pa' | 'as' | 'ur';
-
-interface LanguageContextType {
-  language: Language;
-  setLanguage: (lang: Language) => void;
-  t: (key: string) => string;
-}
-
-const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
-
-export const useLanguage = () => {
-  const context = useContext(LanguageContext);
-  if (!context) {
-    throw new Error('useLanguage must be used within a LanguageProvider');
-  }
-  return context;
-};
 
 interface LanguageProviderProps {
   children: ReactNode;
@@ -48,7 +33,6 @@ const getTranslations = (): Record<string, Record<string, string>> => {
   return {
     en: {
       // Navigation
-      'nav.dashboard': 'Dashboard',
       'nav.modules': 'Training Modules',
       'nav.vr': 'VR Training',
       'nav.admin': 'Admin',

@@ -21,7 +21,7 @@ import {
   EyeOff,
   X
 } from 'lucide-react';
-import { useLanguage } from './LanguageContext';
+import { useLanguage } from './hooks/useLanguage';
 import { useIsMobile } from './hooks/useIsMobile';
 import { schools, colleges } from './shared/institutionsData';
 

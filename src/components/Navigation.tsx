@@ -27,7 +27,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "./ui/select";
-import { useLanguage } from './LanguageContext';
+import { useLanguage } from './hooks/useLanguage';
 
 interface UserData {
   schoolName: string;

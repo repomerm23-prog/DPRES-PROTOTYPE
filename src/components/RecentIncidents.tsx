@@ -4,7 +4,7 @@ import { Button } from './ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
 import { ImageWithFallback } from './designkit/ImageWithFallback';
 import { BookOpen, Users, Shield, AlertTriangle } from 'lucide-react';
-import { useLanguage } from './LanguageContext';
+import { useLanguage } from './hooks/useLanguage';
 
 export function RecentIncidents() {
   const { t } = useLanguage();

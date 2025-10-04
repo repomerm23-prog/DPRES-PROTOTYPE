@@ -20,7 +20,7 @@ import {
   Headphones,
   QrCode
 } from 'lucide-react';
-import { useLanguage } from './LanguageContext';
+import { useLanguage } from './hooks/useLanguage';
 
 export function VRTrainingPage() {
   const { t } = useLanguage();

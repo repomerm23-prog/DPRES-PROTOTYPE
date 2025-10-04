@@ -28,7 +28,7 @@ import {
   Target,
   X
 } from 'lucide-react';
-import { useLanguage } from './LanguageContext';
+import { useLanguage } from './hooks/useLanguage';
 import { useAlerts } from './shared/AlertContext';
 import { getInstitutionById } from './shared/institutionsData';
 
@@ -464,7 +464,7 @@ export function Dashboard({ userData }: DashboardProps) {
               <Label htmlFor="incident-type">{t('dashboard.incident.type')}</Label>
               <Select
                 value={incidentForm.type}
-                onValueChange={(value) => setIncidentForm(prev => ({ ...prev, type: value }))}
+                onValueChange={(value: string) => setIncidentForm(prev => ({ ...prev, type: value }))}
               >
                 <SelectTrigger id="incident-type">
                   <SelectValue placeholder={t('dashboard.incident.selectType')} />

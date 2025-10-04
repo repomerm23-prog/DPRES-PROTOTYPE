@@ -19,7 +19,7 @@ import {
   Award,
   Target
 } from 'lucide-react';
-import { useLanguage } from './LanguageContext';
+import { useLanguage } from './hooks/useLanguage';
 
 interface UserData {
   schoolName: string;

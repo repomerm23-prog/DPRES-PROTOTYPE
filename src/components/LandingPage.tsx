@@ -13,7 +13,7 @@ import {
   Target,
   Globe
 } from 'lucide-react';
-import { useLanguage } from './LanguageContext';
+import { useLanguage } from './hooks/useLanguage';
 import { RecentIncidents } from './RecentIncidents';
 
 interface UserData {
