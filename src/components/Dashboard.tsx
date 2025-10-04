@@ -449,13 +449,13 @@ export function Dashboard({ userData }: DashboardProps) {
 
       {/* Report Incident Modal */}
       <Dialog open={incidentModalOpen} onOpenChange={setIncidentModalOpen}>
-        <DialogContent className="sm:max-w-md">
+        <DialogContent className="sm:max-w-md" aria-describedby="incident-dialog-description">
           <DialogHeader>
             <DialogTitle className="flex items-center space-x-2">
               <FileText className="h-5 w-5 text-blue-500" />
               <span>{t('dashboard.incident.title')}</span>
             </DialogTitle>
-            <DialogDescription>
+            <DialogDescription id="incident-dialog-description">
               {t('dashboard.incident.description')}
             </DialogDescription>
           </DialogHeader>
@@ -464,7 +464,7 @@ export function Dashboard({ userData }: DashboardProps) {
               <Label htmlFor="incident-type">{t('dashboard.incident.type')}</Label>
               <Select
                 value={incidentForm.type}
-                onValueChange={(value: string) => setIncidentForm(prev => ({ ...prev, type: value }))}
+              onValueChange={(value: string) => setIncidentForm(prev => ({ ...prev, type: value }))}
               >
                 <SelectTrigger id="incident-type">
                   <SelectValue placeholder={t('dashboard.incident.selectType')} />

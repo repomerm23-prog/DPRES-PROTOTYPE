@@ -482,31 +482,27 @@ export function LoginPage({ onLogin, onAdminLogin }: LoginPageProps) {
                   </Label>
                   <Select value={selectedSchool} onValueChange={handleInstitutionSelect}>
                     <SelectTrigger className="bg-white/80 border-gray-200 focus:border-indigo-400 focus:ring-indigo-400/20 h-10 sm:h-11 text-sm sm:text-base">
-                      <SelectValue placeholder={institutionType === 'school' ? t('login.chooseSchool') : t('login.chooseCollege')} />
+                      <SelectValue placeholder={institutionType === 'school' ? t('login.chooseSchool') : t('login.chooseCollege')}>
+                        {selectedSchool && getInstitutions().find(i => i.id === selectedSchool)?.name.replace(/\b(School|Kolkata|High School|Primary School|Secondary School|Higher Secondary School)\b/gi, '').replace(/[,\-\s]+/g, ' ').replace(/\s+/g, ' ').trim()}
+                      </SelectValue>
                     </SelectTrigger>
                     <SelectContent>
-                      {getInstitutions().map((institution) => (
-                        <SelectItem key={institution.id} value={institution.id}>
-                          <div className="flex items-start justify-between w-full max-w-full">
-                            <div className="flex-1 min-w-0">
-                              <div className="break-words text-sm sm:text-base font-medium">{institution.name}</div>
-                              <div className="text-xs text-gray-500 break-words">
+                      {getInstitutions().map((institution) => {
+                        const cleanName = institution.name.replace(/\b(School|Kolkata|High School|Primary School|Secondary School|Higher Secondary School)\b/gi, '').replace(/[,\-\s]+/g, ' ').replace(/\s+/g, ' ').trim();
+                        return (
+                          <SelectItem 
+                            key={institution.id} 
+                            value={institution.id}
+                          >
+                            <div className="flex flex-col gap-2 py-2">
+                              <div className="break-words font-medium leading-snug">{cleanName}</div>
+                              <div className="text-gray-500 break-words leading-relaxed" style={{ fontSize: '0.8125rem' }}>
                                 {institution.district}, {institution.state}
                               </div>
                             </div>
-                            <div className="flex flex-col items-end ml-2 space-y-1">
-                              <Badge variant="outline" className="text-xs capitalize">
-                                {institution.type}
-                              </Badge>
-                              {(institution.district === 'Kolkata' || institution.district === 'Howrah') && (
-                                <Badge variant="secondary" className="text-xs bg-orange-100 text-orange-700 border-orange-200">
-                                  কলকাতা
-                                </Badge>
-                              )}
-                            </div>
-                          </div>
-                        </SelectItem>
-                      ))}
+                          </SelectItem>
+                        );
+                      })}
                     </SelectContent>
                   </Select>
                 </div>
